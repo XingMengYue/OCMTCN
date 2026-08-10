@@ -1,0 +1,18 @@
+
+input_path: /disk6/xie_rh/Rwork/model/01_IV
+input_feature: [ 'GR', 'AC', 'QT', 'CNL']
+window_size: 1024
+stride: 256
+batch_size: 32
+epochs: 500
+patience: 30
+n_splits: 5
+is_plaint: false
+model: "OCMTCN" 
+seed: 0
+is_add_loss: false
+is_plus: false
+is_transfer: false
+is_muti: false                                               
+content: "原始+深度"
+pic_out_path: visualization_results3
