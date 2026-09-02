@@ -105,5 +105,3 @@ visualization_results/
 ### 8\. Note
 
 The well logging dataset used in this project is confidential and cannot be uploaded to the GitHub repository\. However, we have provided complete data processing logic, parameter configuration and model running codes\. Users can replace the local data path in **config\.yaml** to complete model training and testing\.
-
-> （注：部分内容可能由 AI 生成）
