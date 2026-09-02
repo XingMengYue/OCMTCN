@@ -33,35 +33,35 @@ OCMTCN/
 
 All hyperparameters and running settings are defined in **OtherFile/config\.yaml**, the key parameters are shown below:
 
-input\_path:       Well logging dataset folder path
+input_path:       Well logging dataset folder path
 
-    input\_feature:    Input logging feature columns \(e\.g\., GR, AC, QT, CNL\)
+    input_feature:    Input logging feature columns \(e\.g\., GR, AC, QT, CNL\)
 
-    window\_size:      Sliding window size \(default: 1024\)
+    window_size:      Sliding window size \(default: 1024\)
 
     stride:           Sliding window step size \(default: 256\)
 
-    batch\_size:       Training batch size \(default: 32\)
+    batch_size:       Training batch size \(default: 32\)
 
     epochs:           Maximum training iterations \(default: 500\)
 
     patience:         Early stopping patience value \(default: 30\)
 
-    n\_splits:         K\-fold cross validation folds \(default: 5\)
+    n_splits:         K\-fold cross validation folds \(default: 5\)
 
     model:           Model type \(fixed as "OCMTCN"\)
 
     seed:             Global random seed \(default: 0\)
 
-    is\_plaint:        Whether to generate visualization results \(true/false\)
+    is_plaint:        Whether to generate visualization results \(true/false\)
 
-    is\_add\_loss:      Whether to enable reverse order loss function \(true/false\)
+    is_add_loss:      Whether to enable reverse order loss function \(true/false\)
 
-    is\_plus:          Whether to enable data augmentation strategy \(true/false\)
+    is_plus:          Whether to enable data augmentation strategy \(true/false\)
 
-    is\_muti:          Whether to enable multi\-resolution feature fusion \(true/false\)
+    is_muti:          Whether to enable multi\-resolution feature fusion \(true/false\)
 
-    pic\_out\_path:     Output path of visualization images
+    pic_out_path:     Output path of visualization images
 
 ### 5\. Model Training \& Inference
 
@@ -87,7 +87,7 @@ After the training is completed, the console will automatically print the follow
 
     \- F1\-score and sample quantity of each lithology category
 
-If **is\_plaint** is enabled, visualization results will be automatically generated in the **pic\_out\_path** directory, and the file structure is as follows:
+If **is\_plaint** is enabled, visualization results will be automatically generated in the **pic_out_path** directory, and the file structure is as follows:
 
 ```Plain Text
 visualization_results/
